@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ta-Te-Ti!!!</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <style>
+        @keyframes changeColor {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: orange; }
+            100% { color: red; }
+        }
+        @keyframes changeSize {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        h1 {
+            font-family: Impact;
+            
+            font-size: 36px;
+            text-align: center;
+            margin-top: 20px;
+            animation: changeColor 10s linear infinite;
+        }
+        h2 {
+            font-family: Arial, sans-serif;
+            color: #961f1f;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            animation: changeSize 5s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1> Super Ultra Hiper Mega TA-TE-TI 2!!! </h1>
+    <h2> Traido a ustedes gracias a node + Chatgpt </h2>
+    <div id="message"></div>
+    <div id="board"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="static/client.js"></script>
+</body>
+</html>
